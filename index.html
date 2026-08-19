@@ -286,6 +286,150 @@
     </div>
 
   </section>
+<style>
+  .valley-section {
+    position: relative;
+    min-height: 100vh;
+    background: #111612;
+    color: #f4f0e8;
+    display: flex;
+    align-items: center;
+    padding: 120px 8vw;
+    overflow: hidden;
+  }
 
+  .valley-number {
+    position: absolute;
+    top: 70px;
+    left: 3vw;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    color: rgba(244, 240, 232, 0.38);
+  }
+
+  .valley-inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.35fr;
+    gap: 10vw;
+    align-items: start;
+  }
+
+  .valley-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.52);
+    margin-bottom: 28px;
+  }
+
+  .valley-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3.5rem, 6vw, 6.5rem);
+    font-weight: 400;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+  }
+
+  .valley-copy {
+    padding-top: 55px;
+    max-width: 620px;
+  }
+
+  .valley-lead {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    line-height: 1.15;
+    font-weight: 400;
+    margin-bottom: 35px;
+  }
+
+  .valley-text {
+    font-size: 0.98rem;
+    line-height: 1.85;
+    font-weight: 300;
+    color: rgba(244, 240, 232, 0.68);
+    max-width: 540px;
+  }
+
+  .valley-line {
+    width: 70px;
+    height: 1px;
+    background: rgba(244, 240, 232, 0.45);
+    margin-top: 45px;
+  }
+
+  @media (max-width: 800px) {
+    .valley-section {
+      min-height: auto;
+      padding: 100px 22px 90px;
+    }
+
+    .valley-number {
+      top: 38px;
+      left: 22px;
+    }
+
+    .valley-inner {
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+
+    .valley-copy {
+      padding-top: 0;
+    }
+
+    .valley-title {
+      font-size: clamp(3.5rem, 17vw, 5.5rem);
+    }
+
+    .valley-lead {
+      font-size: 2rem;
+    }
+  }
+</style>
+
+<section class="valley-section" id="the-valley">
+
+  <div class="valley-number">02</div>
+
+  <div class="valley-inner">
+
+    <div>
+      <div class="valley-label">The Valley</div>
+
+      <h2 class="valley-title">
+        Before we<br>
+        change it,<br>
+        we listen.
+      </h2>
+    </div>
+
+    <div class="valley-copy">
+
+      <p class="valley-lead">
+        A landscape shaped by time, water and abandonment.
+      </p>
+
+      <p class="valley-text">
+        Boqueirão begins as a wild Madeiran valley — dense with eucalyptus,
+        ferns and spontaneous vegetation, with much of its agricultural
+        structure hidden beneath years of growth.
+        <br><br>
+        Our first task is not to impose a finished vision upon it, but to
+        understand what is already here: the land, the soil, the movement
+        of water, the existing terraces and the ecology that has developed
+        in their absence.
+      </p>
+
+      <div class="valley-line"></div>
+
+    </div>
+
+  </div>
+
+</section>
 </body>
 </html>

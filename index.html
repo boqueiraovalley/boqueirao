@@ -5,6 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Boqueirão Valley</title>
+<link rel="preload" as="image" href="hero-baseline.webp" type="image/webp" fetchpriority="high">
 <meta content="A wild Madeiran landscape at the beginning of its agricultural regeneration." name="description"/>
 <meta name="robots" content="index, follow, max-image-preview:large"/>
 <meta name="theme-color" content="#101411"/>
@@ -380,11 +381,20 @@ html {
         object-position: 56% center;
       }
     }
-  </style>
+  
+.hero > picture,
+.archive-card > picture {
+  display: contents;
+}
+
+</style>
 </head>
 <body>
 <section class="hero" id="baseline">
-<img alt="" class="hero-image" src="hero-baseline.jpeg"/>
+<picture>
+  <source srcset="hero-baseline.webp" type="image/webp">
+  <img alt="" class="hero-image" src="hero-baseline.jpeg" fetchpriority="high" decoding="async">
+</picture>
 <div class="hero-overlay"></div>
 <div class="topbar">
 <div class="brand">
@@ -1563,7 +1573,10 @@ html {
 </div>
 <div class="archive-grid">
 <div class="archive-card current">
-<img alt="Boqueirão Valley baseline photograph, 2026" class="archive-photo" data-i18n-alt="archive_image_alt" src="hero-baseline.jpeg"/>
+<picture>
+  <source srcset="hero-baseline.webp" type="image/webp">
+  <img alt="Boqueirão Valley baseline photograph, 2026" class="archive-photo" data-i18n-alt="archive_image_alt" src="hero-baseline.jpeg" loading="lazy" decoding="async">
+</picture>
 <div class="archive-photo-overlay"></div>
 <div class="archive-card-content">
 <div class="archive-year" data-i18n="archive_current_year">

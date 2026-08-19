@@ -4,129 +4,230 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Boqueirão Valley | Madeira</title>
-  <meta name="description" content="Boqueirão Valley — a regenerative hospitality and nature project in Madeira.">
+  <title>Boqueirão Valley</title>
+
+  <meta
+    name="description"
+    content="A wild Madeiran landscape at the beginning of its agricultural regeneration."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background:
-        linear-gradient(rgba(13, 36, 27, 0.55), rgba(13, 36, 27, 0.75)),
-        linear-gradient(135deg, #365f49, #132d22);
-      color: white;
-      min-height: 100vh;
-    }
-
-    .page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      padding: 32px 6%;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 20px;
-      letter-spacing: 3px;
-      font-weight: 600;
-    }
-
-    .location {
-      font-size: 13px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      opacity: 0.8;
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      align-items: center;
+      background: #101411;
+      color: #f4f0e8;
+      font-family: "Inter", sans-serif;
     }
 
     .hero {
-      max-width: 850px;
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      background: #101411;
     }
 
-    .eyebrow {
-      font-size: 13px;
-      letter-spacing: 4px;
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          to top,
+          rgba(7, 10, 8, 0.88) 0%,
+          rgba(7, 10, 8, 0.50) 32%,
+          rgba(7, 10, 8, 0.20) 64%,
+          rgba(7, 10, 8, 0.38) 100%
+        ),
+        linear-gradient(
+          to right,
+          rgba(5, 8, 6, 0.58) 0%,
+          rgba(5, 8, 6, 0.22) 42%,
+          rgba(5, 8, 6, 0.06) 100%
+        );
+    }
+
+    .topbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 40px;
+    }
+
+    .brand {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.25rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      margin-bottom: 24px;
-      opacity: 0.85;
+      color: rgba(244, 240, 232, 0.92);
+    }
+
+    .location {
+      font-size: 0.72rem;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: rgba(244, 240, 232, 0.56);
+    }
+
+    .chapters {
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+    }
+
+    .chapters span {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      color: rgba(244, 240, 232, 0.36);
+    }
+
+    .chapters span:first-child {
+      color: rgba(244, 240, 232, 0.92);
+    }
+
+    .content {
+      position: relative;
+      z-index: 3;
+      width: min(860px, calc(100% - 80px));
+      padding: 0 40px 78px 118px;
+    }
+
+    .baseline {
+      margin-bottom: 18px;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(244, 240, 232, 0.66);
     }
 
     h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(60px, 10vw, 130px);
-      font-weight: 400;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(3.8rem, 7.2vw, 7rem);
+      font-weight: 500;
       line-height: 0.88;
-      letter-spacing: -4px;
-      margin-bottom: 30px;
+      letter-spacing: -0.03em;
+      max-width: 840px;
+      text-wrap: balance;
     }
 
-    h1 span {
-      display: block;
+    .subheadline {
+      margin-top: 16px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(1.5rem, 2.4vw, 2.2rem);
       font-style: italic;
-      font-weight: 400;
+      line-height: 1.15;
+      color: rgba(244, 240, 232, 0.93);
     }
 
-    .intro {
-      max-width: 620px;
-      font-size: clamp(18px, 2vw, 24px);
-      line-height: 1.5;
+    .description {
+      margin-top: 28px;
+      max-width: 560px;
+      font-size: 0.96rem;
       font-weight: 300;
-      opacity: 0.95;
+      line-height: 1.75;
+      color: rgba(244, 240, 232, 0.74);
     }
 
-    .coming {
-      margin-top: 45px;
+    .enter {
       display: inline-block;
-      border: 1px solid rgba(255,255,255,0.6);
-      padding: 14px 24px;
-      border-radius: 50px;
-      font-size: 12px;
-      letter-spacing: 3px;
+      margin-top: 28px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(244, 240, 232, 0.48);
+      color: #f4f0e8;
+      text-decoration: none;
+      font-size: 0.76rem;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
     }
 
-    footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      font-size: 12px;
-      opacity: 0.7;
-      letter-spacing: 1px;
+    .scroll {
+      position: absolute;
+      right: 40px;
+      bottom: 34px;
+      z-index: 3;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 0.66rem;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: rgba(244, 240, 232, 0.42);
     }
 
-    @media (max-width: 700px) {
-      .page {
-        padding: 25px;
+    @media (max-width: 800px) {
+      .topbar {
+        padding: 22px 20px;
       }
 
-      header,
-      footer {
-        align-items: flex-start;
-        flex-direction: column;
+      .location,
+      .chapters,
+      .scroll {
+        display: none;
+      }
+
+      .brand {
+        font-size: 1rem;
+      }
+
+      .content {
+        width: 100%;
+        padding: 0 20px 48px;
       }
 
       h1 {
-        letter-spacing: -2px;
+        font-size: clamp(3rem, 15vw, 5rem);
+        line-height: 0.92;
       }
 
-      .intro {
-        font-size: 18px;
+      .subheadline {
+        font-size: 1.55rem;
+      }
+
+      .description {
+        max-width: 100%;
+        font-size: 0.92rem;
+      }
+
+      .hero-image {
+        object-position: 56% center;
       }
     }
   </style>
@@ -134,44 +235,57 @@
 
 <body>
 
-  <div class="page">
+  <section class="hero">
 
-    <header>
-      <div class="logo">BOQUEIRÃO VALLEY</div>
+    <img
+      src="hero-baseline.jpeg"
+      alt="Boqueirão Valley in Madeira in its wild baseline state"
+      class="hero-image"
+    >
+
+    <div class="hero-overlay"></div>
+
+    <div class="topbar">
+      <div class="brand">Boqueirão Valley</div>
       <div class="location">Madeira · Portugal</div>
-    </header>
+    </div>
 
-    <main>
-      <section class="hero">
+    <div class="chapters">
+      <span>01</span>
+      <span>02</span>
+      <span>03</span>
+      <span>04</span>
+    </div>
 
-        <div class="eyebrow">
-          Land · Nature · Hospitality
-        </div>
+    <div class="content">
 
-        <h1>
-          Boqueirão
-          <span>Valley</span>
-        </h1>
+      <div class="baseline">
+        2026 — The Baseline
+      </div>
 
-        <p class="intro">
-          A place rooted in Madeira.  
-          Regenerative agriculture, nature, hospitality and experiences
-          brought together in one extraordinary valley.
-        </p>
+      <h1>
+        Every valley has a story.
+      </h1>
 
-        <div class="coming">
-          The journey is beginning
-        </div>
+      <div class="subheadline">
+        This one is beginning again.
+      </div>
 
-      </section>
-    </main>
+      <p class="description">
+        A wild Madeiran landscape at the beginning of its agricultural regeneration.
+      </p>
 
-    <footer>
-      <div>Madeira, Portugal</div>
-      <div>© 2026 Boqueirão Valley</div>
-    </footer>
+      <a class="enter" href="#">
+        Enter the story
+      </a>
 
-  </div>
+    </div>
+
+    <div class="scroll">
+      Scroll to explore
+    </div>
+
+  </section>
 
 </body>
 </html>

@@ -915,5 +915,336 @@
   </div>
 
 </section>
+<style>
+  .plan-section {
+    position: relative;
+    min-height: 100vh;
+    background: #131814;
+    color: #f4f0e8;
+    padding: 120px 8vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-top: 1px solid rgba(244, 240, 232, 0.08);
+  }
+
+  .plan-number {
+    position: absolute;
+    top: 70px;
+    left: 3vw;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    color: rgba(244, 240, 232, 0.38);
+  }
+
+  .plan-inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .plan-header {
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr;
+    gap: 10vw;
+    margin-bottom: 90px;
+  }
+
+  .plan-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.52);
+    margin-bottom: 28px;
+  }
+
+  .plan-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3.5rem, 6vw, 6.5rem);
+    font-weight: 400;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+  }
+
+  .plan-intro {
+    padding-top: 55px;
+    max-width: 640px;
+  }
+
+  .plan-lead {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1.15;
+    margin-bottom: 28px;
+  }
+
+  .plan-text {
+    font-size: 0.96rem;
+    line-height: 1.8;
+    font-weight: 300;
+    color: rgba(244, 240, 232, 0.64);
+    max-width: 560px;
+  }
+
+  .timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid rgba(244, 240, 232, 0.18);
+  }
+
+  .timeline-stage {
+    position: relative;
+    padding: 34px 28px 45px 0;
+    min-height: 260px;
+    border-right: 1px solid rgba(244, 240, 232, 0.10);
+  }
+
+  .timeline-stage:not(:first-child) {
+    padding-left: 28px;
+  }
+
+  .timeline-stage:last-child {
+    border-right: none;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    background: #f4f0e8;
+    border-radius: 50%;
+  }
+
+  .timeline-stage:not(:first-child) .timeline-dot {
+    left: 28px;
+  }
+
+  .timeline-year {
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.42);
+    margin-bottom: 45px;
+  }
+
+  .timeline-stage h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.9rem;
+    line-height: 1.05;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  .timeline-stage p {
+    font-size: 0.86rem;
+    line-height: 1.7;
+    font-weight: 300;
+    color: rgba(244, 240, 232, 0.58);
+    max-width: 230px;
+  }
+
+  .timeline-note {
+    margin-top: 32px;
+    font-size: 0.70rem;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.34);
+  }
+
+  @media (max-width: 900px) {
+    .plan-section {
+      min-height: auto;
+      padding: 100px 22px 90px;
+    }
+
+    .plan-number {
+      top: 38px;
+      left: 22px;
+    }
+
+    .plan-header {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .plan-intro {
+      padding-top: 0;
+    }
+
+    .plan-title {
+      font-size: clamp(3.5rem, 17vw, 5.5rem);
+    }
+
+    .plan-lead {
+      font-size: 2rem;
+    }
+
+    .timeline {
+      grid-template-columns: 1fr;
+      border-top: none;
+      border-left: 1px solid rgba(244, 240, 232, 0.18);
+      margin-left: 5px;
+    }
+
+    .timeline-stage,
+    .timeline-stage:not(:first-child) {
+      padding: 0 0 45px 34px;
+      min-height: auto;
+      border-right: none;
+    }
+
+    .timeline-dot,
+    .timeline-stage:not(:first-child) .timeline-dot {
+      top: 5px;
+      left: -5px;
+    }
+
+    .timeline-year {
+      margin-bottom: 18px;
+    }
+
+    .timeline-stage p {
+      max-width: 100%;
+    }
+  }
+</style>
+
+<section class="plan-section" id="the-plan">
+
+  <div class="plan-number">05</div>
+
+  <div class="plan-inner">
+
+    <div class="plan-header">
+
+      <div>
+
+        <div class="plan-label">
+          The Plan
+        </div>
+
+        <h2 class="plan-title">
+          Change<br>
+          measured<br>
+          in years.
+        </h2>
+
+      </div>
+
+      <div class="plan-intro">
+
+        <p class="plan-lead">
+          Regeneration is not a before-and-after moment.
+        </p>
+
+        <p class="plan-text">
+          Boqueirão will evolve gradually. Each year will leave evidence:
+          what we discovered, what changed, what worked and what the valley
+          taught us. The plan provides direction, but the land will determine
+          the pace.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-stage">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-year">
+          2026 — Baseline
+        </div>
+
+        <h3>
+          Observe &<br>
+          understand
+        </h3>
+
+        <p>
+          Document the starting point, study the landscape,
+          assess soil and water, and begin building a reliable
+          picture of the valley.
+        </p>
+
+      </div>
+
+      <div class="timeline-stage">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-year">
+          2027 — Foundations
+        </div>
+
+        <h3>
+          Access, soil<br>
+          & water
+        </h3>
+
+        <p>
+          Begin the first carefully selected interventions,
+          informed by the baseline and by what the site reveals.
+        </p>
+
+      </div>
+
+      <div class="timeline-stage">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-year">
+          2028 — Establishment
+        </div>
+
+        <h3>
+          Terraces &<br>
+          planting
+        </h3>
+
+        <p>
+          Progressively restore productive structure and
+          establish planting where conditions support it.
+        </p>
+
+      </div>
+
+      <div class="timeline-stage">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-year">
+          2029 — Evolution
+        </div>
+
+        <h3>
+          A productive<br>
+          landscape
+        </h3>
+
+        <p>
+          Allow the emerging agricultural system to mature,
+          measure its performance and adapt the next phase
+          to real results.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="timeline-note">
+      An evolving framework — timing and interventions will respond to field observation and evidence.
+    </div>
+
+  </div>
+
+</section>
 </body>
 </html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Boqueirão Valley | Madeira</title>
+  <meta name="description" content="Boqueirão Valley — a regenerative hospitality and nature project in Madeira.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        linear-gradient(rgba(13, 36, 27, 0.55), rgba(13, 36, 27, 0.75)),
+        linear-gradient(135deg, #365f49, #132d22);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 32px 6%;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      letter-spacing: 3px;
+      font-weight: 600;
+    }
+
+    .location {
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      opacity: 0.85;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(60px, 10vw, 130px);
+      font-weight: 400;
+      line-height: 0.88;
+      letter-spacing: -4px;
+      margin-bottom: 30px;
+    }
+
+    h1 span {
+      display: block;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .intro {
+      max-width: 620px;
+      font-size: clamp(18px, 2vw, 24px);
+      line-height: 1.5;
+      font-weight: 300;
+      opacity: 0.95;
+    }
+
+    .coming {
+      margin-top: 45px;
+      display: inline-block;
+      border: 1px solid rgba(255,255,255,0.6);
+      padding: 14px 24px;
+      border-radius: 50px;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 12px;
+      opacity: 0.7;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        padding: 25px;
+      }
+
+      header,
+      footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .intro {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <header>
+      <div class="logo">BOQUEIRÃO VALLEY</div>
+      <div class="location">Madeira · Portugal</div>
+    </header>
+
+    <main>
+      <section class="hero">
+
+        <div class="eyebrow">
+          Land · Nature · Hospitality
+        </div>
+
+        <h1>
+          Boqueirão
+          <span>Valley</span>
+        </h1>
+
+        <p class="intro">
+          A place rooted in Madeira.  
+          Regenerative agriculture, nature, hospitality and experiences
+          brought together in one extraordinary valley.
+        </p>
+
+        <div class="coming">
+          The journey is beginning
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <div>Madeira, Portugal</div>
+      <div>© 2026 Boqueirão Valley</div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

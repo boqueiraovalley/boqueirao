@@ -111,11 +111,27 @@ html {
     }
 
     .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
       font-family: "Cormorant Garamond", serif;
       font-size: 1.25rem;
+      line-height: 1;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: rgba(244, 240, 232, 0.92);
+    }
+
+    .brand-mark {
+      width: 46px;
+      height: auto;
+      display: block;
+      flex: 0 0 auto;
+    }
+
+    .brand-name {
+      display: block;
+      white-space: nowrap;
     }
 
     .location {
@@ -296,7 +312,13 @@ html {
       }
 
       .brand {
-        font-size: 1rem;
+        gap: 8px;
+        font-size: 0.82rem;
+        letter-spacing: 0.13em;
+      }
+
+      .brand-mark {
+        width: 30px;
       }
 
       .content {
@@ -330,8 +352,9 @@ html {
 <div class="hero-overlay"></div>
 <div class="topbar">
 <div class="brand">
-    Boqueirão Valley
-  </div>
+  <img class="brand-mark" src="brand-mark.png" alt="" aria-hidden="true">
+  <span class="brand-name">Boqueirão Valley</span>
+</div>
 <div class="topbar-right">
 <div class="location">
       Madeira · Portugal

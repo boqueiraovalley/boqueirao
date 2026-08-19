@@ -2420,13 +2420,26 @@ html {
     text-align: center;
   }
 
-  .footer-year {
-    justify-self: end;
-    font-size: 0.62rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: rgba(244, 240, 232, 0.32);
-  }
+ .footer-year {
+  justify-self: end;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(244, 240, 232, 0.32);
+}
+
+.footer-year a {
+  color: rgba(244, 240, 232, 0.58);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-year a:hover {
+  color: #f4f0e8;
+}
 
   @media (max-width: 900px) {
     .journey-section {
@@ -2537,8 +2550,9 @@ html {
     </div>
 
     <div class="footer-year">
-      Est. 2026
-    </div>
+  <a href="#baseline">Top ↑</a>
+  <span>Est. 2026</span>
+</div>
 
   </footer>
 

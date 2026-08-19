@@ -1631,5 +1631,331 @@
   </div>
 
 </section>
+<style>
+  .notes-section {
+    position: relative;
+    min-height: 100vh;
+    background: #121713;
+    color: #f4f0e8;
+    padding: 120px 8vw;
+    overflow: hidden;
+    border-top: 1px solid rgba(244, 240, 232, 0.08);
+  }
+
+  .notes-number {
+    position: absolute;
+    top: 70px;
+    left: 3vw;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    color: rgba(244, 240, 232, 0.38);
+  }
+
+  .notes-inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .notes-header {
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr;
+    gap: 10vw;
+    margin-bottom: 80px;
+  }
+
+  .notes-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.52);
+    margin-bottom: 28px;
+  }
+
+  .notes-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3.5rem, 6vw, 6.5rem);
+    font-weight: 400;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+  }
+
+  .notes-intro {
+    padding-top: 55px;
+    max-width: 640px;
+  }
+
+  .notes-lead {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1.15;
+    margin-bottom: 28px;
+  }
+
+  .notes-text {
+    font-size: 0.96rem;
+    line-height: 1.8;
+    font-weight: 300;
+    color: rgba(244, 240, 232, 0.64);
+    max-width: 570px;
+  }
+
+  .notes-list {
+    border-top: 1px solid rgba(244, 240, 232, 0.16);
+  }
+
+  .note-entry {
+    display: grid;
+    grid-template-columns: 150px 1fr 160px;
+    gap: 40px;
+    padding: 34px 0;
+    border-bottom: 1px solid rgba(244, 240, 232, 0.12);
+    align-items: start;
+  }
+
+  .note-date {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.40);
+    padding-top: 6px;
+  }
+
+  .note-entry h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.85rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  .note-entry p {
+    font-size: 0.90rem;
+    line-height: 1.75;
+    font-weight: 300;
+    color: rgba(244, 240, 232, 0.60);
+    max-width: 650px;
+  }
+
+  .note-status {
+    justify-self: end;
+    font-size: 0.66rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.38);
+    padding-top: 6px;
+  }
+
+  .note-entry:first-child .note-status {
+    color: rgba(244, 240, 232, 0.80);
+  }
+
+  .note-placeholder h3,
+  .note-placeholder p {
+    color: rgba(244, 240, 232, 0.32);
+  }
+
+  .notes-footer {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 40px;
+    margin-top: 34px;
+  }
+
+  .notes-footer-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.36);
+  }
+
+  .notes-footer p {
+    font-size: 0.80rem;
+    line-height: 1.7;
+    color: rgba(244, 240, 232, 0.46);
+    max-width: 650px;
+  }
+
+  @media (max-width: 900px) {
+    .notes-section {
+      min-height: auto;
+      padding: 100px 22px 90px;
+    }
+
+    .notes-number {
+      top: 38px;
+      left: 22px;
+    }
+
+    .notes-header {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-bottom: 55px;
+    }
+
+    .notes-intro {
+      padding-top: 0;
+    }
+
+    .notes-title {
+      font-size: clamp(3.5rem, 17vw, 5.5rem);
+    }
+
+    .notes-lead {
+      font-size: 2rem;
+    }
+
+    .note-entry {
+      grid-template-columns: 1fr;
+      gap: 14px;
+      padding: 28px 0;
+    }
+
+    .note-status {
+      justify-self: start;
+    }
+
+    .notes-footer {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  }
+</style>
+
+<section class="notes-section" id="field-notes">
+
+  <div class="notes-number">07</div>
+
+  <div class="notes-inner">
+
+    <div class="notes-header">
+
+      <div>
+
+        <div class="notes-label">
+          Field Notes
+        </div>
+
+        <h2 class="notes-title">
+          Record<br>
+          what the<br>
+          land teaches.
+        </h2>
+
+      </div>
+
+      <div class="notes-intro">
+
+        <p class="notes-lead">
+          A regeneration project should leave a trail of evidence.
+        </p>
+
+        <p class="notes-text">
+          Field Notes will document observations, decisions, interventions
+          and lessons as Boqueirão evolves. Not a polished retrospective,
+          but a working record of the project as it actually happens.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="notes-list">
+
+      <div class="note-entry">
+
+        <div class="note-date">
+          2026 — 001
+        </div>
+
+        <div>
+
+          <h3>
+            Establishing the baseline
+          </h3>
+
+          <p>
+            The valley is documented in its current unmanaged state:
+            dense vegetation, mature eucalyptus, ferns and an agricultural
+            structure that is still difficult to read beneath the growth.
+            These photographs establish the visual starting point against
+            which future change can be measured.
+          </p>
+
+        </div>
+
+        <div class="note-status">
+          Recorded
+        </div>
+
+      </div>
+
+      <div class="note-entry note-placeholder">
+
+        <div class="note-date">
+          Next
+        </div>
+
+        <div>
+
+          <h3>
+            First field observations
+          </h3>
+
+          <p>
+            Soil, water, access, vegetation and existing landscape structure
+            will be documented here as the first detailed site work begins.
+          </p>
+
+        </div>
+
+        <div class="note-status">
+          Awaiting fieldwork
+        </div>
+
+      </div>
+
+      <div class="note-entry note-placeholder">
+
+        <div class="note-date">
+          Future
+        </div>
+
+        <div>
+
+          <h3>
+            Decisions & interventions
+          </h3>
+
+          <p>
+            Future entries will record what was done, why it was done,
+            what changed and what the evidence suggests should happen next.
+          </p>
+
+        </div>
+
+        <div class="note-status">
+          To be documented
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="notes-footer">
+
+      <div class="notes-footer-label">
+        Principle
+      </div>
+
+      <p>
+        Record the starting condition. Record the intervention.
+        Record the result. Then decide what comes next.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 </body>
 </html>

@@ -431,5 +431,212 @@
   </div>
 
 </section>
+<style>
+  .challenge-section {
+    position: relative;
+    min-height: 100vh;
+    background: #151a16;
+    color: #f4f0e8;
+    padding: 120px 8vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-top: 1px solid rgba(244, 240, 232, 0.08);
+  }
+
+  .challenge-number {
+    position: absolute;
+    top: 70px;
+    left: 3vw;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    color: rgba(244, 240, 232, 0.38);
+  }
+
+  .challenge-inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr;
+    gap: 10vw;
+  }
+
+  .challenge-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.52);
+    margin-bottom: 28px;
+  }
+
+  .challenge-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3.5rem, 6vw, 6.5rem);
+    font-weight: 400;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+  }
+
+  .challenge-intro {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1.15;
+    margin-bottom: 48px;
+    max-width: 620px;
+  }
+
+  .challenge-list {
+    border-top: 1px solid rgba(244, 240, 232, 0.16);
+  }
+
+  .challenge-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 25px;
+    padding: 26px 0;
+    border-bottom: 1px solid rgba(244, 240, 232, 0.12);
+  }
+
+  .challenge-index {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    color: rgba(244, 240, 232, 0.38);
+    padding-top: 5px;
+  }
+
+  .challenge-item h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.65rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+  .challenge-item p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    font-weight: 300;
+    color: rgba(244, 240, 232, 0.62);
+    max-width: 580px;
+  }
+
+  @media (max-width: 800px) {
+    .challenge-section {
+      min-height: auto;
+      padding: 100px 22px 90px;
+    }
+
+    .challenge-number {
+      top: 38px;
+      left: 22px;
+    }
+
+    .challenge-inner {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+
+    .challenge-title {
+      font-size: clamp(3.5rem, 17vw, 5.5rem);
+    }
+
+    .challenge-intro {
+      font-size: 2rem;
+    }
+
+    .challenge-item {
+      grid-template-columns: 42px 1fr;
+      gap: 15px;
+    }
+  }
+</style>
+
+<section class="challenge-section" id="the-challenge">
+
+  <div class="challenge-number">03</div>
+
+  <div class="challenge-inner">
+
+    <div>
+
+      <div class="challenge-label">
+        The Challenge
+      </div>
+
+      <h2 class="challenge-title">
+        First,<br>
+        understand<br>
+        the land.
+      </h2>
+
+    </div>
+
+    <div>
+
+      <p class="challenge-intro">
+        Regeneration begins with questions, not answers.
+      </p>
+
+      <div class="challenge-list">
+
+        <div class="challenge-item">
+          <div class="challenge-index">01</div>
+
+          <div>
+            <h3>Read the landscape</h3>
+
+            <p>
+              Map the slopes, existing access, hidden terraces and the
+              structure of a valley currently obscured by dense vegetation.
+            </p>
+          </div>
+        </div>
+
+        <div class="challenge-item">
+          <div class="challenge-index">02</div>
+
+          <div>
+            <h3>Understand the water</h3>
+
+            <p>
+              Observe how water moves through the site before deciding
+              where to retain it, redirect it or build around it.
+            </p>
+          </div>
+        </div>
+
+        <div class="challenge-item">
+          <div class="challenge-index">03</div>
+
+          <div>
+            <h3>Know the soil</h3>
+
+            <p>
+              Assess its structure, organic matter, fertility and condition
+              before choosing crops or beginning major interventions.
+            </p>
+          </div>
+        </div>
+
+        <div class="challenge-item">
+          <div class="challenge-index">04</div>
+
+          <div>
+            <h3>Decide what stays</h3>
+
+            <p>
+              Regeneration is not simply clearing land. It means understanding
+              what should remain, what should change and what the valley needs next.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 </body>
 </html>

@@ -638,5 +638,282 @@
   </div>
 
 </section>
+<style>
+  .regeneration-section {
+    position: relative;
+    min-height: 100vh;
+    background: #0d120f;
+    color: #f4f0e8;
+    padding: 120px 8vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-top: 1px solid rgba(244, 240, 232, 0.08);
+  }
+
+  .regeneration-number {
+    position: absolute;
+    top: 70px;
+    left: 3vw;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    color: rgba(244, 240, 232, 0.38);
+  }
+
+  .regeneration-inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .regeneration-header {
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr;
+    gap: 10vw;
+    margin-bottom: 80px;
+  }
+
+  .regeneration-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.52);
+    margin-bottom: 28px;
+  }
+
+  .regeneration-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3.5rem, 6vw, 6.5rem);
+    font-weight: 400;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+  }
+
+  .regeneration-intro {
+    padding-top: 55px;
+    max-width: 640px;
+  }
+
+  .regeneration-lead {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1.15;
+    margin-bottom: 28px;
+  }
+
+  .regeneration-text {
+    font-size: 0.96rem;
+    line-height: 1.8;
+    font-weight: 300;
+    color: rgba(244, 240, 232, 0.64);
+    max-width: 560px;
+  }
+
+  .regeneration-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid rgba(244, 240, 232, 0.16);
+  }
+
+  .regen-step {
+    position: relative;
+    padding: 32px 24px 38px 0;
+    min-height: 210px;
+    border-right: 1px solid rgba(244, 240, 232, 0.10);
+  }
+
+  .regen-step:not(:first-child) {
+    padding-left: 24px;
+  }
+
+  .regen-step:last-child {
+    border-right: none;
+  }
+
+  .regen-step-number {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    color: rgba(244, 240, 232, 0.34);
+    margin-bottom: 45px;
+  }
+
+  .regen-step h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.65rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  .regen-step p {
+    font-size: 0.84rem;
+    line-height: 1.65;
+    font-weight: 300;
+    color: rgba(244, 240, 232, 0.56);
+  }
+
+  .regen-arrow {
+    position: absolute;
+    top: 30px;
+    right: 18px;
+    font-size: 1rem;
+    color: rgba(244, 240, 232, 0.24);
+  }
+
+  @media (max-width: 900px) {
+    .regeneration-section {
+      min-height: auto;
+      padding: 100px 22px 90px;
+    }
+
+    .regeneration-number {
+      top: 38px;
+      left: 22px;
+    }
+
+    .regeneration-header {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .regeneration-intro {
+      padding-top: 0;
+    }
+
+    .regeneration-title {
+      font-size: clamp(3.5rem, 17vw, 5.5rem);
+    }
+
+    .regeneration-lead {
+      font-size: 2rem;
+    }
+
+    .regeneration-steps {
+      grid-template-columns: 1fr;
+    }
+
+    .regen-step,
+    .regen-step:not(:first-child) {
+      padding: 26px 0;
+      min-height: auto;
+      border-right: none;
+      border-bottom: 1px solid rgba(244, 240, 232, 0.10);
+    }
+
+    .regen-step-number {
+      margin-bottom: 18px;
+    }
+
+    .regen-arrow {
+      display: none;
+    }
+  }
+</style>
+
+<section class="regeneration-section" id="regeneration">
+
+  <div class="regeneration-number">04</div>
+
+  <div class="regeneration-inner">
+
+    <div class="regeneration-header">
+
+      <div>
+
+        <div class="regeneration-label">
+          Regeneration
+        </div>
+
+        <h2 class="regeneration-title">
+          Restore<br>
+          before we<br>
+          produce.
+        </h2>
+
+      </div>
+
+      <div class="regeneration-intro">
+
+        <p class="regeneration-lead">
+          The valley will be rebuilt from its foundations.
+        </p>
+
+        <p class="regeneration-text">
+          The sequence matters. Before productivity comes understanding;
+          before planting comes soil, water and structure. Each intervention
+          will respond to what we learn from the land rather than forcing
+          the valley into a predetermined model.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="regeneration-steps">
+
+      <div class="regen-step">
+        <div class="regen-step-number">01</div>
+        <div class="regen-arrow">→</div>
+
+        <h3>Soil</h3>
+
+        <p>
+          Understand its condition, rebuild organic matter
+          and create the biological foundation for what follows.
+        </p>
+      </div>
+
+      <div class="regen-step">
+        <div class="regen-step-number">02</div>
+        <div class="regen-arrow">→</div>
+
+        <h3>Water</h3>
+
+        <p>
+          Observe, capture and manage water according to the
+          natural movement and topography of the valley.
+        </p>
+      </div>
+
+      <div class="regen-step">
+        <div class="regen-step-number">03</div>
+        <div class="regen-arrow">→</div>
+
+        <h3>Biodiversity</h3>
+
+        <p>
+          Increase ecological complexity and create a more
+          resilient landscape around future production.
+        </p>
+      </div>
+
+      <div class="regen-step">
+        <div class="regen-step-number">04</div>
+        <div class="regen-arrow">→</div>
+
+        <h3>Terraces</h3>
+
+        <p>
+          Recover and adapt the agricultural structure of
+          the valley where the terrain and evidence support it.
+        </p>
+      </div>
+
+      <div class="regen-step">
+        <div class="regen-step-number">05</div>
+
+        <h3>Cultivation</h3>
+
+        <p>
+          Introduce crops progressively, choosing species and
+          systems in response to the conditions we uncover.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 </body>
 </html>

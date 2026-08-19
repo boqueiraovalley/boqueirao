@@ -115,15 +115,21 @@ html {
       gap: 17px;
     }
 
-    .chapters span {
-      font-size: 0.72rem;
-      letter-spacing: 0.18em;
-      color: rgba(244, 240, 232, 0.36);
-    }
+    .chapters a {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: rgba(244, 240, 232, 0.36);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
 
-    .chapters span:first-child {
-      color: rgba(244, 240, 232, 0.92);
-    }
+.chapters a:first-child {
+  color: rgba(244, 240, 232, 0.92);
+}
+
+.chapters a:hover {
+  color: rgba(244, 240, 232, 0.92);
+}
 
     .content {
       position: relative;
@@ -237,7 +243,7 @@ html {
 
 <body>
 
-  <section class="hero">
+  <section class="hero" id="baseline">
 
     <img
       src="hero-baseline.jpeg"
@@ -253,11 +259,16 @@ html {
     </div>
 
     <div class="chapters">
-      <span>01</span>
-      <span>02</span>
-      <span>03</span>
-      <span>04</span>
-    </div>
+  <a href="#baseline">01</a>
+  <a href="#the-valley">02</a>
+  <a href="#the-challenge">03</a>
+  <a href="#regeneration">04</a>
+  <a href="#the-plan">05</a>
+  <a href="#baseline-archive">06</a>
+  <a href="#field-notes">07</a>
+  <a href="#the-future">08</a>
+  <a href="#follow-the-journey">09</a>
+</div>
 
     <div class="content">
 

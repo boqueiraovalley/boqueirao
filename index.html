@@ -144,26 +144,41 @@ html {
   display: flex;
   align-items: center;
   gap: 28px;
+  flex: 0 0 auto;
 }
 
 .language-switcher {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
+  justify-content: flex-end;
   gap: 10px;
+  white-space: nowrap;
 }
 
 .lang-btn {
   appearance: none;
+  -webkit-appearance: none;
   border: 0;
   background: transparent;
+  margin: 0;
   padding: 0;
   cursor: pointer;
   font-family: "Inter", sans-serif;
   font-size: 0.64rem;
   font-weight: 400;
   letter-spacing: 0.14em;
+  line-height: 1;
+  height: 18px;
+  min-height: 18px;
   color: rgba(244, 240, 232, 0.38);
   transition: color 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
 .lang-btn:hover {
@@ -176,7 +191,9 @@ html {
 
 .lang-btn:not(:last-child)::after {
   content: "·";
+  display: inline-block;
   margin-left: 10px;
+  line-height: 1;
   color: rgba(244, 240, 232, 0.20);
   pointer-events: none;
 }
@@ -277,30 +294,49 @@ html {
     }
 
     @media (max-width: 800px) {
-            .hero {
+      .hero {
         min-height: 100svh;
       }
+
       .topbar {
-  align-items: flex-start;
-}
+        align-items: flex-start;
+      }
 
-.topbar-right {
-  gap: 0;
-}
+      .topbar-right {
+        margin-left: auto;
+        gap: 0;
+        flex: 0 0 auto;
+        align-items: flex-start;
+      }
 
-.language-switcher {
-  gap: 6px;
-  justify-content: flex-end;
-}
+      .language-switcher {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 6px;
+        white-space: nowrap;
+        line-height: 1;
+        height: 20px;
+      }
 
-.lang-btn {
-  font-size: 0.58rem;
-  letter-spacing: 0.10em;
-}
+      .lang-btn {
+        font-size: 0.58rem;
+        letter-spacing: 0.10em;
+        line-height: 1;
+        height: 20px;
+        min-height: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
 
-.lang-btn:not(:last-child)::after {
-  margin-left: 6px;
-}
+      .lang-btn:not(:last-child)::after {
+        margin-left: 6px;
+        line-height: 1;
+      }
       .topbar {
         padding: 22px 20px;
       }

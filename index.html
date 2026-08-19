@@ -1957,5 +1957,323 @@
   </div>
 
 </section>
+<style>
+  .future-section {
+    position: relative;
+    min-height: 100vh;
+    background: #0c110e;
+    color: #f4f0e8;
+    padding: 120px 8vw;
+    overflow: hidden;
+    border-top: 1px solid rgba(244, 240, 232, 0.08);
+    display: flex;
+    align-items: center;
+  }
+
+  .future-number {
+    position: absolute;
+    top: 70px;
+    left: 3vw;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    color: rgba(244, 240, 232, 0.38);
+  }
+
+  .future-inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .future-header {
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr;
+    gap: 10vw;
+    margin-bottom: 85px;
+  }
+
+  .future-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.52);
+    margin-bottom: 28px;
+  }
+
+  .future-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3.5rem, 6vw, 6.5rem);
+    font-weight: 400;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+  }
+
+  .future-intro {
+    padding-top: 55px;
+    max-width: 650px;
+  }
+
+  .future-lead {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1.15;
+    margin-bottom: 28px;
+  }
+
+  .future-text {
+    font-size: 0.96rem;
+    line-height: 1.8;
+    font-weight: 300;
+    color: rgba(244, 240, 232, 0.64);
+    max-width: 570px;
+  }
+
+  .future-path {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid rgba(244, 240, 232, 0.16);
+    border-bottom: 1px solid rgba(244, 240, 232, 0.12);
+  }
+
+  .future-stage {
+    min-height: 330px;
+    padding: 35px 32px 38px 0;
+    border-right: 1px solid rgba(244, 240, 232, 0.10);
+  }
+
+  .future-stage:not(:first-child) {
+    padding-left: 32px;
+  }
+
+  .future-stage:last-child {
+    border-right: none;
+  }
+
+  .future-phase {
+    font-size: 0.68rem;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.38);
+    margin-bottom: 65px;
+  }
+
+  .future-stage:first-child .future-phase {
+    color: rgba(244, 240, 232, 0.82);
+  }
+
+  .future-stage h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    line-height: 1.02;
+    font-weight: 400;
+    margin-bottom: 22px;
+  }
+
+  .future-stage p {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    font-weight: 300;
+    color: rgba(244, 240, 232, 0.58);
+    max-width: 320px;
+  }
+
+  .future-stage:not(:first-child) h3,
+  .future-stage:not(:first-child) p {
+    color: rgba(244, 240, 232, 0.48);
+  }
+
+  .future-principle {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    padding-top: 30px;
+  }
+
+  .future-principle-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    color: rgba(244, 240, 232, 0.38);
+  }
+
+  .future-principle p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.35rem;
+    line-height: 1.35;
+    color: rgba(244, 240, 232, 0.68);
+    max-width: 700px;
+  }
+
+  @media (max-width: 900px) {
+    .future-section {
+      min-height: auto;
+      padding: 100px 22px 90px;
+    }
+
+    .future-number {
+      top: 38px;
+      left: 22px;
+    }
+
+    .future-header {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .future-intro {
+      padding-top: 0;
+    }
+
+    .future-title {
+      font-size: clamp(3.5rem, 17vw, 5.5rem);
+    }
+
+    .future-lead {
+      font-size: 2rem;
+    }
+
+    .future-path {
+      grid-template-columns: 1fr;
+    }
+
+    .future-stage,
+    .future-stage:not(:first-child) {
+      min-height: auto;
+      padding: 30px 0;
+      border-right: none;
+      border-bottom: 1px solid rgba(244, 240, 232, 0.10);
+    }
+
+    .future-stage:last-child {
+      border-bottom: none;
+    }
+
+    .future-phase {
+      margin-bottom: 28px;
+    }
+
+    .future-principle {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+</style>
+
+<section class="future-section" id="the-future">
+
+  <div class="future-number">08</div>
+
+  <div class="future-inner">
+
+    <div class="future-header">
+
+      <div>
+
+        <div class="future-label">
+          The Future
+        </div>
+
+        <h2 class="future-title">
+          Agriculture<br>
+          first.<br>
+          Everything<br>
+          else follows.
+        </h2>
+
+      </div>
+
+      <div class="future-intro">
+
+        <p class="future-lead">
+          The future of Boqueirão will be earned by the land.
+        </p>
+
+        <p class="future-text">
+          Our ambition extends beyond production, but the sequence matters.
+          Boqueirão must first become a functioning, resilient agricultural
+          landscape. Only then should new ways of experiencing the valley
+          grow around what has genuinely been created here.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="future-path">
+
+      <div class="future-stage">
+
+        <div class="future-phase">
+          First
+        </div>
+
+        <h3>
+          A productive<br>
+          landscape
+        </h3>
+
+        <p>
+          Establish a resilient agricultural system rooted in soil health,
+          water management, biodiversity and production adapted to the valley.
+        </p>
+
+      </div>
+
+      <div class="future-stage">
+
+        <div class="future-phase">
+          Then
+        </div>
+
+        <h3>
+          Experiences<br>
+          with purpose
+        </h3>
+
+        <p>
+          As the project matures, the valley may become a place to learn,
+          taste, visit and understand regenerative agriculture through
+          authentic experiences connected to the work itself.
+        </p>
+
+      </div>
+
+      <div class="future-stage">
+
+        <div class="future-phase">
+          Eventually
+        </div>
+
+        <h3>
+          Stay within<br>
+          the story
+        </h3>
+
+        <p>
+          In time, and only where appropriate, agrotourism could allow guests
+          to experience Boqueirão more deeply — with hospitality growing from
+          the agricultural project rather than replacing it.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="future-principle">
+
+      <div class="future-principle-label">
+        The principle
+      </div>
+
+      <p>
+        Build the landscape first. Let the experiences emerge from what becomes real.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 </body>
 </html>
